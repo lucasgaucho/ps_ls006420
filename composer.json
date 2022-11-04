@@ -1,0 +1,16 @@
+{
+    "name": "lucas/projeto01",
+    "autoload": {
+        "psr-4": {
+            "PetShop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Hammes de Souza"
+        }
+    ],
+    "require": {
+        "bramus/router": "^1.6"
+    }
+}
