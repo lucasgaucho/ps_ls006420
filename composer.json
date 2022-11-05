@@ -3,7 +3,12 @@
     "autoload": {
         "psr-4": {
             "PetShop\\": "src/"
-        }
+        },
+        "files" :[
+            "config/constants.php",
+            "config/parameters.php"
+
+        ]
     },
     "authors": [
         {
