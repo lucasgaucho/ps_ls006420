@@ -1,11 +1,33 @@
 <?php
 require_once __DIR__  . '/../vendor/autoload.php';
 
+use Petshop\Core\DB;
+
+$sql =  'INSERT INTO dicas (titulo, descricao) VALUES (?,?)';
+$s = DB::query($sql, ['Dica 1', 'Descricao Dica 01']);
+echo $s->rowCount();
+
+
+
+
+
+
+
+/*
+use Petshop\Core\DB;
+
+$estados = DB::select('select * from estados where estado lie=ke = ?', [RS]
+);
+
+var_dump($estados);
+
+
+
 echo date('d/m/Y H:i:s');
 echo '<br>';
 echo 'FRONTEND_TITLE';
 
-/*
+
 $router = new \Bramus\Router\Router();
 
 $router-> get('/', function() {
