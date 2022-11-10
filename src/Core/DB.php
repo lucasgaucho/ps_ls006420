@@ -23,7 +23,7 @@ class DB
         if ( is_null(self::$db) ){
             try{
                 $dsn = sprintf('mysql:dbname=%s;host=%s', DB_SCHEMA, DB_HOST);
-                self::$db = new \PDO($dsn, DB_USER, DB_PASS);
+            self::$db = new \PDO($dsn, DB_USER, /*DB_PASS*/);
             } catch(\PDOException $e){
                 error_log( $e->getMessage());
                 throw new Exception('Falha ao realizar a conexão com o servidor, por favor, tente mais tarde');
