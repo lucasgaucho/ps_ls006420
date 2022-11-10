@@ -2,8 +2,18 @@
 
 namespace Petshop\Core;
 
+use Petshop\Core\Attribute\Campo;
+use Petshop\Core\Attribute\Entidade;
+
 class DB
 {
+    private $tableinfo = [];
+
+    public function __construct()
+    {
+        $this->tableInfo = $this->getTableInfo();;
+    }
+
     /**
      * Variavel estática que armazenara a conexão ao banco de dados 
      * num objeto PDO
@@ -92,4 +102,54 @@ class DB
             throw new Exception('Falha ao realizar comando no banco de dados');
         }
     }
-}
+
+    public function getTableInfo() : array
+    {
+        /*vetor que armazenara as informações da classe 
+        referente as tabelas e campos do banco de dados
+         */
+        $info = [];
+
+        /*pegando as metainformações da classe referente ao
+        objeto atual instanciado
+         */
+        $ref = new \ReflectionClass($this::class);
+        foreach($ref->getAttributes(Entidade::class) as $attrTable) {
+            $info['tabela'] = $attrTable->getArguments();
+
+            //procurando as metainformações das propriedades da classe
+            foreach($ref->getProperties() as $propriedade) {
+                // para cada campo/prop localizada, procura seus atributos
+                foreach($propriedade->getAttributes(Campo::class) as $attrCampo) {
+                    $info['campos'][$propriedade->getName()] = $attrCampo->getArguments();
+                }
+            }
+        }
+
+        public function getTableName() : string
+        {
+        return $this->tableinfo['tabela']['name'];
+    }
+
+    public function getFields() : array
+    {
+        return $this->tableInfo['campos'];
+    }
+
+    public function getOrderbyField() : string 
+    {
+        foreach($this->tableinfo['campos'] as $cname => $cprops) {
+            if(array_key_exists('order', $cprops)) {
+                return strtolower($cname);
+            }
+            return ''; 
+    }}
+
+    public function getPkName() : array 
+    {
+        foreach($this->tableinfo['campos'] as $cname => $cprops) {
+            if(array_key_exists('pk', $cprops)) {
+                return strtolower($cname);
+            }
+            return '';
+    }}
