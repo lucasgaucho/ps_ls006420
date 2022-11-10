@@ -1,51 +1,95 @@
 <?php
 
-namespace PetShop\Core;
+namespace Petshop\Core;
 
 class DB
 {
     /**
-     * Váriável estática que armazenará a conexão ao banco de dados
-     * em um objeto PDO
+     * Variavel estática que armazenara a conexão ao banco de dados 
+     * num objeto PDO
      *
      * @var \PDO
      */
     private static $db;
 
     /**
-     * Retorna a conexão do banco de dados
-     * reusa se já tiver estabelecida.
+     * Retorna uma uma instância de conexão ao banco de dados
+     * reusa se já houver uma estabelecida
      *
      * @return \PDO
      */
-    public static function getInstance() : \PDO {
-            if( is_null(self::$db)) {
-                try {
-                    $dsn = sprintf('mysql:dbname=%s;host=%s', DB_SCHEMA, DB_HOST);
-                    self ::$db = new \PDO($dsn, DB_USER, DB_PASSWORD);
-                } catch(\PDOException $e) {
-                    error_log($e->getMessage());
-                    throw new Exception('Falha ao realizar conexão com o servidor, por favor, tente mais tarde. :('); 
-                }
-            }
-            return self::$db;
-    }
-        public static function query(string $sql, array $params=[]) : \PDOStatement 
-        {
-            try {
-                $st = self::getInstance()->prepare($sql);
-                if (!$st) {
-                    error_log('Erro ao preparar consulta: ' . $sql);
-                    throw new Exception('Falha ao preparar comando SQL.');
-                }
-                if (!$st->execute($params)) {
-                    error_log('Erro ao executar comando sql: ' . $sql . ' - ' .  var_export($params, true) );
-                    throw new Exception('Falha ao executar comando SQL.');
-                }
-                return $st;
-            } catch(\PDOException $e) {
-                error_log('Erro PDO ' . $e->getMessage() . ' - Linha: ' . $e->getLine());
-                throw new Exception('Falha ao executar comando no DB');
+    public static function getInstance() : \PDO
+    {
+        if ( is_null(self::$db) ){
+            try{
+                $dsn = sprintf('mysql:dbname=%s;host=%s', DB_SCHEMA, DB_HOST);
+                self::$db = new \PDO($dsn, DB_USER, DB_PASS);
+            } catch(\PDOException $e){
+                error_log( $e->getMessage());
+                throw new Exception('Falha ao realizar a conexão com o servidor, por favor, tente mais tarde');
             }
         }
+        return self::$db;
+    }
+
+    /**
+     * Método estático que retorna o resultado d uma consulta SQL
+     * preparada ou não. Retorna um vetor de dados (PDO::FETCH_ASSOC)
+     *
+     * @param string $sql Consulta preparada com ou sem parâmetros
+     * @param array $params Parâmetros opcionais
+     * @return array
+     */
+    public static function select(string $sql, array $params=[]) : array
+    {
+        try{
+            $st = self::getInstance()->prepare($sql);
+            if (!$st) {
+                error_log('Erro ao preparar a consulta: ' . $sql);
+                throw new Exception ('Falha a preparar comando SQL');
+            }
+
+            $params = array_values($params);
+            if (!$st->execute($params)) {
+                error_log('Erro ao executar comando SQL: ' . $sql . '-' .
+                var_export($params, true));
+                throw new Exception ('Falha ao executar comando SQL');
+            }
+            return $st->fetchAll(\PDO::FETCH_ASSOC);
+        } catch(\PDOException $e){
+            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine() . ' - ' . $sql);
+            throw new Exception('Falha ao realizar consulta no banco de dados');
+        }
+        return [];
+    }
+
+    /**
+     * Método estático que retorna um Statement de uma execução SQL
+     * no banco de dados 
+     *
+     * @param string $sql Comando SQL (insert/update/delete) preparado
+     * @param array $params Parâmetros/valores referentes a consulta
+     * @return \PDOStatement
+     */
+    public static function query(string $sql, array $params=[]) : \PDOStatement
+    {
+        try{
+            $st = self::getInstance()->prepare($sql);
+            if (!$st) {
+                error_log('Erro ao preparar a consulta: ' . $sql);
+                throw new Exception ('Falha a preparar comando SQL');
+            }
+
+            $params = array_values($params);
+            if (!$st->execute($params)) {
+                error_log('Erro ao executar comando SQL: ' . $sql . '-' .
+                var_export($params, true));
+                throw new Exception ('Falha ao executar comando SQL');
+            }
+            return $st;
+        } catch(\PDOException $e){
+            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine());
+            throw new Exception('Falha ao realizar comando no banco de dados');
+        }
+    }
 }
