@@ -125,11 +125,11 @@ class DB
                 }
             }
         }
-
-        public function getTableName() : string
-        {
-        return $this->tableinfo['tabela']['name'];
-    }
+    
+    public function getTableName() : string
+    {
+    return $this->tableinfo['tabela']['name'];
+    }   
 
     public function getFields() : array
     {
@@ -152,4 +152,4 @@ class DB
                 return strtolower($cname);
             }
             return '';
-    }}
+    }}}
