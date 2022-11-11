@@ -1,9 +1,9 @@
 <?php
 
-namespace Petshop\Core;
+namespace PetShop\Core;
 
-use Petshop\Core\Attribute\Campo;
-use Petshop\Core\Attribute\Entidade;
+use PetShop\Core\Attribute\Campo;
+use PetShop\Core\Attribute\Entidade;
 
 class DAO
 {

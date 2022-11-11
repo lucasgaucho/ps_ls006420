@@ -1,6 +1,6 @@
 <?php
 
-namespace Petshop\Core\Attribute;
+namespace PetShop\Core\Attribute;
 #[\Attribute]
 class Campo {
     
