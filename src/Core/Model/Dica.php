@@ -84,4 +84,24 @@ class Dica extends DAO
         }
         return true;
     }
+
+        public function save() : bool
+        {
+            $nomedatabela = $this->getTableName();
+            $nomeCampoChave = $this->getPkName();
+            $valorCampoChave = $this->$nomeCampoChave;
+
+            $campos = [];
+            foreach($this->getFields() as $atributo => $parametros) {
+                if (array_key_exists('auto', $parametros)) {
+                    continue;
+                }
+
+                if(isnull($this->$atributo) && array_key_exists('nn', $parametros) ) {
+                    $label = $parametros['label'];
+                    throw new Exception("O campo {} deve ser preenchido");
+                }
+                $campos[ strtolower($atributo) ] = $this->$atributo;
+            }
+        }
 }
