@@ -124,7 +124,7 @@ class DB
                     $info['campos'][$propriedade->getName()] = $attrCampo->getArguments();
                 }
             }
-        }
+        }   
     
     public function getTableName() : string
     {
