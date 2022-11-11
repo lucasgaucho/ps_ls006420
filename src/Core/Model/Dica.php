@@ -63,4 +63,25 @@ class Dica extends DAO
     {
         return $this->updated_at;
     }
+
+    public function loadById(int | string $id) : bool
+    {
+        if (!$this->getPkName()) {
+            return false;
+        }
+        $registro = $this->find([
+            $this->getPkName() . '=' => $id;
+        ]); 
+
+        if( !isset($registro[0] ) )
+        {
+            return false;
+        }
+        
+        $atributos = array_keys( $this->getFields() );
+        foreach($atributos as $atributo) {
+            $this->$atributo = $registro[0][ strtolower($atributo) ];
+        }
+        return true;
+    }
 }
