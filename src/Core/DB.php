@@ -145,6 +145,30 @@ class DB
             return ''; 
     }}
 
+    public function find(array $params=[], array $order=[], string $columns='*') : array
+    {
+        $where = '';
+        if (count($params)) {
+            $where = 'WHERE' . implode('? and ', $array_keys($params)) . ' ? ';
+            die($where);
+
+            $orderBy = '';
+            if (count($order)) {
+                $orderBy = ' ORDER BY ' . implode(',', $order);
+            } elseif ($this->getOrderbyField() ){
+                $orderBy = 'ORDER BY ' . $this->getOrderbyField(); 
+            }
+            $sql = sprintf(
+                 'SELECT s% FROM %s %s %s',
+                 $columns,
+                 $this->getTableName(),
+                 $where,
+                 $orderBy
+            );
+            return DB::select($params);
+        }
+    }
+
     public function getPkName() : array 
     {
         foreach($this->tableinfo['campos'] as $cname => $cprops) {
@@ -152,4 +176,7 @@ class DB
                 return strtolower($cname);
             }
             return '';
-    }}}
+                }
+        }
+
+}
