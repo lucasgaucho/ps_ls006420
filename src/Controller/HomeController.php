@@ -2,15 +2,17 @@
 
 namespace PetShop\Controller;
 
+use Petshop\View\Render;
+use Petshop\Model\Estado;
 
 class HomeController {
     public function index()
     {
-        echo 'Ola mundo!';
-    }
+        $estados = (new Estado())->find();
 
-    public function login()
-    {
-        echo 'Olá mundo - pag de login';
+        $dados = [];
+        $dados['titulo'] = 'Lista de Estados';
+        $dados['estados'] = $estados;
+        Render::front('home', $dados);
     }
 }
