@@ -11,8 +11,11 @@ class DB
     {
         if ( is_null(self::$db) ){
             try{
-                $dsn = sprintf('mysql:dbname=%s;host=%s', DB_SCHEMA, DB_HOST);
-            self::$db = new \PDO($dsn, DB_USER, /*DB_PASS*/);
+                $options = [
+                \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,    
+                \PDO::ATTR_EMULATE_PREPARES => false,    
+                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+                ];
             } catch(\PDOException $e){
                 error_log( $e->getMessage());
                 throw new Exception('Falha ao realizar a conexão com o servidor, por favor, tente mais tarde');
@@ -23,25 +26,8 @@ class DB
 
     public static function select(string $sql, array $params=[]) : array
     {
-        try{
-            $st = self::getInstance()->prepare($sql);
-            if (!$st) {
-                error_log('Erro ao preparar a consulta: ' . $sql);
-                throw new Exception ('Falha a preparar comando SQL');
-            }
-
-            $params = array_values($params);
-            if (!$st->execute($params)) {
-                error_log('Erro ao executar comando SQL: ' . $sql . '-' .
-                var_export($params, true));
-                throw new Exception ('Falha ao executar comando SQL');
-            }
-            return $st->fetchAll(\PDO::FETCH_ASSOC);
-        } catch(\PDOException $e){
-            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine() . ' - ' . $sql);
-            throw new Exception('Falha ao realizar consulta no banco de dados');
-        }
-        return [];
+        $st = self::query($sql, $params);
+        return $st->fetchAll();
     }
 
     
@@ -50,19 +36,25 @@ class DB
         try{
             $st = self::getInstance()->prepare($sql);
             if (!$st) {
-                error_log('Erro ao preparar a consulta: ' . $sql);
+                error_log("Erro ao preparar a consulta:\n{$sql}");
                 throw new Exception ('Falha a preparar comando SQL');
             }
 
             $params = array_values($params);
             if (!$st->execute($params)) {
-                error_log('Erro ao executar comando SQL: ' . $sql . '-' .
+                error_log("Erro ao executar comando SQL:\n{$sql}\nParâmetros:\n " .
                 var_export($params, true));
                 throw new Exception ('Falha ao executar comando SQL');
             }
             return $st;
         } catch(\PDOException $e){
-            error_log('Erro PDO: ' . $e->getMessage() . ' - Linha: ' . $e->getLine());
+            $msgErroLog = sprintf("Erro PDO: %s, na linha: %s, comando: \n%s\nParâmetros\n%s",
+        $e->getMessage(),
+        $e->getLine(),
+        $sql,
+        var_export($params, true)
+        );
+            error_log($msgErroLog);
             throw new Exception('Falha ao realizar comando no banco de dados');
         }
     }
