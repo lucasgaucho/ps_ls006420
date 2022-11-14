@@ -1,155 +1,134 @@
 <?php
+namespace Petshop\Model;
 
-namespace PetShop\Model;
-
-use Exception;
-use PetShop\Core\Attribute\Campo;
-use PetShop\Core\Attribute\Entidade;
-use PetShop\Core\DAO;
+use Petshop\Core\Attribute\Campo;
+use Petshop\Core\Attribute\Entidade;
+use Petshop\Core\DAO;
+use Petshop\Core\Exception;
+use Respect\Validation\Validator as v;
 
 #[Entidade(name: 'clientes')]
+class Cliente extends DAO
+{
+  #[Campo(label: 'Cód. Cliente', pk: true, nn: true, auto: true)]
+  protected $idCliente;
 
-class Cliente extends DAO {
-    #[Campo(label: 'Cód. Cliente', nn:true, pk:true, auto:true)]
-    protected $idCliente;
+  #[Campo(label: 'Tipo (PF/PJ)', nn: true)]
+  protected $tipo;
 
-    #[Campo(label: 'Tipo de Cliente (PF/PJ)', nn:true)]
-    protected $tipo;
+  #[Campo(label: 'Documento', nn: true)]
+  protected $cpfCnpj;
 
-    #[Campo(label: 'Cód. Cliente', nn:true, pk:true, auto:true)]
-    protected $cpfcnpj;
+  #[Campo(label: 'Nome do cliente', nn: true, order:true)]
+  protected $nome;
 
-    #[Campo(label: 'Nome Completo', nn:true)]
-    protected $nome;
+  #[Campo(label: 'E-mail do cliente', nn: true)]
+  protected $email;
+
+  #[Campo(label: 'Senha do cliente', nn: true)]
+  protected $senha;
+
+  #[Campo(label: 'Dt. Criação', nn: true, auto: true)]
+  protected $created_at;
+
+  #[Campo(label: 'Dt. Alteração', nn: true, auto: true)]
+  protected $updated_at;
+
+
+  public function getIdCliente()
+  {
+    return $this->idCliente;
+  }
+
+  public function getTipo()
+  {
+    return $this->tipo;
+  }
+
+  public function setTipo(string $tipo): self
+  {
+    $tipo = strtoupper(trim($tipo));
+    if (!in_array($tipo, ['F', 'J'])) {
+      throw new Exception('O tipo de pessoa não está definido corretamente (F/J)');
+    }
+
+    $this->tipo = $tipo;
+    return $this;
+  }
+
+  public function getCpfCnpj()
+  {
+    return $this->cpfCnpj;
+  }
+
+  public function setCpfCnpj(string $cpfCnpj): self
+  {
+    if (!in_array($this->tipo, ['F', 'J'])) {
+      throw new Exception('O tipo de pessoa (F/J)precisa ser definido antes do documento');
+    }
+    if ($this->tipo == 'F') {
+      $docValido = v::cpf()->validate($cpfCnpj);
+    } else {
+      $docValido = v::cnpj()->validate($cpfCnpj);
+    }
     
-    #[Campo(label: 'E-mail', nn:true)]
-    protected $email;
+    if (!$docValido) {
+      throw new Exception('Documento informado é inválido');
+    }
     
-    #[Campo(label: 'Senha', nn:true)]
-    protected $senha;
+    $this->cpfCnpj = $cpfCnpj;
+    return $this;
+  }
 
-    #[Campo(label: 'Dt. Criação', nn:true, auto:true)]
-    protected $created_at;
+  public function getNome()
+  {
+    return $this->nome;
+  }
 
-    #[Campo(label: 'Dt. Alteração', nn:true, auto:true)]
-    protected $updated_at;
+  public function setNome(string $nome): self
+  {
+    $this->nome = $nome;
 
-    /**
-     * Get the value of email
-     */
-    public function getEmail()
-    {
-        return $this->email;
+    return $this;
+  }
+
+  public function getEmail()
+  {
+    return $this->email;
+  }
+
+  public function setEmail(string $email): self
+  {
+    $email = strtolower($email);
+
+    $emailValido = v::email()->validate($email);
+    if (!$emailValido) {
+      throw new Exception('O e-mail informado é inválido');
     }
+    $this->email = $email;
+    return $this;
+  }
 
-    /**
-     * Get the value of idCliente
-     */
-    public function getIdCliente()
-    {
-        return $this->idCliente;
-    }
+  public function getSenha()
+  {
+    return $this->senha;
+  }
 
-    /**
-     * Get the value of created_at
-     */
-    public function getCreatedAt()
-    {
-        return $this->created_at;
-    }
+  public function setSenha(string $senha): self
+  {
+    $hashdaSenha = hash_hmac('mds', $senha, SALT_SENHA);
+    $senha = password_hash($hashdaSenha, PASSWORD_DEFAULT);
+    $this->senha = $senha;
+    return $this;
+  }
 
-    /**
-     * Get the value of updated_at
-     */
-    public function getUpdatedAt()
-    {
-        return $this->updated_at;
-    }
+  public function getCreated_At()
+  {
+    return $this->created_at;
+  }
 
-    /**
-     * Get the value of tipo
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
-
-    /**
-     * Set the value of tipo
-     */
-    public function setTipo($tipo): self
-    {
-        $tipo = strtoupper(trim($tipo));
-        if ( !in_array($tipo, ['F', 'J']) ) {
-            throw new Exception('O tipo de pessoa não está definido corretamente (F/J)');
-        }
-        $this->tipo = $tipo;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of senha
-     */
-    public function getSenha()
-    {
-        return $this->senha;
-    }
-
-    /**
-     * Set the value of senha
-     */
-    public function setSenha($senha): self
-    {
-        $this->senha = $senha;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of cpfcnpj
-     */
-    public function getCpfcnpj()
-    {
-        return $this->cpfcnpj;
-    }
-
-    /**
-     * Set the value of cpfcnpj
-     */
-    public function setCpfcnpj($cpfcnpj): self
-    {
-        $this->cpfcnpj = $cpfcnpj;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of nome
-     */
-    public function getNome()
-    {
-        return $this->nome;
-    }
-
-    /**
-     * Set the value of nome
-     */
-    public function setNome(string $nome): self
-    {
-        $this->nome = $nome;
-
-        return $this;
-    }
-
-
-    /**
-     * Set the value of email
-     */
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
+  public function getUpdated_At()
+  {
+    return $this->updated_at;
+  }
 }
