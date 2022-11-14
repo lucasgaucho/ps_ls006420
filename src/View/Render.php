@@ -26,4 +26,19 @@ class Render
     require_once $pathPagina;
     require_once TFRONTEND . 'common/bottom.php'; 
   }
+
+  static public function block(string $bloco, array $dados=[]) 
+  {
+    $pathPagina = TFRONTEND . 'blocks/' . $bloco . '.php';
+
+    if (!file_exists($pathArquivo)) {
+      error_log('Bloco não localizado em: ' .$pathArquivo);
+      throw new Exception("O bloco solicitado '{$bloco}' não foi localizada");
+    }
+    extract($dados);
+
+    require_once $pathArquivo; 
+
+    return ob_get_clean();
+  }
 }
