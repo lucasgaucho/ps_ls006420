@@ -13,6 +13,8 @@ class HomeController {
         $dados = [];
         $dados['titulo'] = 'Lista de Estados';
         $dados['estados'] = $estados;
+        $dados['topo'] = Render::block('topo');
+
         Render::front('home', $dados);
     }
 }

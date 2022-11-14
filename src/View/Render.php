@@ -29,7 +29,7 @@ class Render
 
   static public function block(string $bloco, array $dados=[]) 
   {
-    $pathPagina = TFRONTEND . 'blocks/' . $bloco . '.php';
+    $pathArquivo = TFRONTEND . 'blocks/' . $bloco . '.php';
 
     if (!file_exists($pathArquivo)) {
       error_log('Bloco não localizado em: ' .$pathArquivo);
