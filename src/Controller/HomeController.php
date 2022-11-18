@@ -1,15 +1,16 @@
 <?php
 
-namespace PetShop\Controller;
+namespace Petshop\Controller;
 
+use Petshop\Core\Model\Estado;
 use Petshop\View\Render;
-use Petshop\Model\Estado;
 
 class HomeController {
+    
     public function index()
     {
         $estados = (new Estado())->find();
-
+        
         $dados = [];
         $dados['titulo'] = 'Lista de Estados';
         $dados['estados'] = $estados;

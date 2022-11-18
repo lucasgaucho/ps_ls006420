@@ -1,6 +1,6 @@
 <?php
 
-namespace PetShop\Core;
+namespace Petshop\Core;
 
 use Bramus\Router\Router;
 
@@ -20,7 +20,7 @@ class App
 
     private static function RegistraRotasdoFrontEnd()
     {
-        self::$router->get('/', 'PetShop\Controller\HomeController@index');
+        self::$router->get('/', 'Petshop\Controller\HomeController@index');
     }
     private static function RegistraRotasdoBackEnd()
     {

@@ -2,7 +2,7 @@
     "name": "lucas/projeto01",
     "autoload": {
         "psr-4": {
-            "PetShop\\": "src/"
+            "Petshop\\": "src/"
         },
         "files" :[
             "config/constants.php",

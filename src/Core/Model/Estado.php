@@ -1,5 +1,6 @@
 <?php
-namespace Petshop\Model;
+
+namespace Petshop\Core\Model;
 
 use Petshop\Core\Attribute\Campo;
 use Petshop\Core\Attribute\Entidade;
@@ -14,7 +15,7 @@ class Estado extends DAO
   #[Campo(label: 'Cód. IBGE do estado ', nn: true)]
   protected $ibge;
 
-  #[Campo(label: 'Nome do estado ', nn: true, order:true)]
+  #[Campo(label: 'Nome do estado ', nn: true, order: true)]
   protected $estado;
 
   #[Campo(label: 'Região do estado ', nn: true)]
@@ -40,5 +41,4 @@ class Estado extends DAO
   {
     return $this->regiao;
   }
-
 }
