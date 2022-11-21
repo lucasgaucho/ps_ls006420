@@ -57,7 +57,9 @@
             </div>
             <div class="topo-site-inferior-fone col-4 text-end d-flex align-items-center justify-content-end">
                 <i class="bi bi-telephone pe-2"></i>
-                <span>Fone: (55) 9 9936-6151</span>
+                <span>
+                    <?= $telefone1??''?>
+                </span>
             </div>
         </div>
     </div>
