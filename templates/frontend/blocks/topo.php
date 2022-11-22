@@ -21,6 +21,7 @@
                     <a href="/login" title="Entrar/Cadastrar" class="d-flex align-items-center">
                         <i class="bi bi-person fs-3 pe-2"></i>
                         <span>Entre ou cadastre-se</span>
+                        
                     </a>
                 </div>
                 <div class="class col-4 d-flex justify-content-between">
