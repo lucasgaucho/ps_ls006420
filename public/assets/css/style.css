@@ -32,6 +32,10 @@
     color:#777;
 }
 
+.pgto-social .fa-brands:hover {
+    color: #333;
+}
+
 .pgto-social a,
 .pgto-social svg {
     color: #777;

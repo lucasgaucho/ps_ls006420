@@ -1,11 +1,12 @@
 <?php
 
 namespace Petshop\Core;
+
 use Petshop\View\Render;
 use Petshop\Model\Empresa;
 
 abstract class FrontController {
-    public function carregaTopo()
+    public function carregaHtmlTopo()
     {
         $empresa = new Empresa;
         $dados = $empresa->find(['tipo ='=>'Matriz']);
