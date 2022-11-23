@@ -57,3 +57,12 @@
 .pg-login .btn-conta {
     margin-top: 5em;
 }
+
+.site-card-opcoes .card a {
+    text-decoration: none;
+    color:#231f20;
+}
+
+.site-card-opcoes .card a b{
+    color: #ff4500;
+}

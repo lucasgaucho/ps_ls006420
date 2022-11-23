@@ -38,6 +38,8 @@ class Render
     }
     extract($dados);
 
+    ob_start();
+    
     require_once $pathArquivo;
 
     return ob_get_clean();

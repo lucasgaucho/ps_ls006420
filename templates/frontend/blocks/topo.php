@@ -17,7 +17,7 @@
                 </form>
             </div>
             <div class="topo-site-opcoes col-4 row text-center align-items-center">
-                <div class="topo-site-opcoes-usr col-8">
+                <div class="topo-site-opcoes-user col-8">
                     <a href="/login" title="Entrar/Cadastrar" class="d-flex align-items-center">
                         <i class="bi bi-person fs-3 pe-2"></i>
                         <span>Entre ou cadastre-se</span>

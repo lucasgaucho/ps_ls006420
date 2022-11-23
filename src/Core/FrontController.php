@@ -10,13 +10,20 @@ abstract class FrontController {
     {
         $empresa = new Empresa;
         $dados = $empresa->find(['tipo ='=>'Matriz']);
-        return Render::block('topo', $dados[0]);
-    }
+
+        if(!empty($_SESSION['cliente']) ) {
+            $dados[0]['cliente'] = $_SESSION['cliente'];
+          }
+      
+          return Render::block('topo', $dados[0]);
+        }
+    
 
     public function carregaHtmlRodape()
     {
         $empresa = new Empresa;
         $dados = $empresa->find(['tipo ='=>'Matriz']);
-        return Render::block('topo', $dados[0]);
+        return Render::block('rodape', $dados[0]);
     }
 }
+

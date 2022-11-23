@@ -14,7 +14,7 @@ class LoginController extends FrontController {
             $dados['rodape'] = $this->carregaHtmlRodape();
             $dados['formLogin'] = $this->formLogin();
 
-                Render::front('login', $dados);
+            Render::front('login', $dados);
         }
 
         public function FormLogin()

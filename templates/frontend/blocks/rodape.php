@@ -2,7 +2,7 @@
   <div class="container">
     <div class="pgto-social row text-center">
       <div class="col-auto me-auto">
-        <strong><i class="fa-regular fa-credit-card"></i>ACEITAMOS</strong>
+        <strong><i class="fa-regular fa-credit-card"></i> ACEITAMOS</strong>
         <div class="mt-2 pt-2 border-top border-dark">
           <i class="fa-brands fs-3 pe-2 fa-cc-visa "></i>
           <i class="fa-brands fs-3 pe-2 fa-cc-mastercard"></i>
