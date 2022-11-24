@@ -6,7 +6,8 @@
         },
         "files" :[
             "config/constants.php",
-            "config/parameters.php"
+            "config/parameters.php",
+            "resources/funcoes.php"
 
         ]
     },
