@@ -22,6 +22,7 @@ class App
     {
         self::$router->get('/', '\Petshop\Controller\HomeController@index');
         self::$router->get('/login', '\Petshop\Controller\LoginController@login');
+        self::$router->get('/cadastro', '\Petshop\Controller\CadastroController@cadastro');
     }
     private static function RegistraRotasdoBackEnd()
     {
