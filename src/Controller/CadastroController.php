@@ -2,7 +2,9 @@
 
 namespace Petshop\Controller;
 
+use Exception;
 use Petshop\Core\FrontController;
+use Petshop\Model\Cliente;
 use Petshop\View\Render;
 
 class CadastroController extends FrontController {
@@ -16,6 +18,27 @@ class CadastroController extends FrontController {
 
             Render::front('cadastro', $dados);
         }
+
+        public function postCadastro()
+        {
+            try {
+            $cliente = new Cliente;
+            $cliente->tipo      = $_POST['tipo'] ?? null;
+            $cliente->cpfcnpj   = $_POST['cpfcnpj'] ?? null;
+            $cliente->nome      = $_POST['nome'] ?? null;
+            $cliente->email     = $_POST['email'] ?? null;
+            $cliente->senha     = $_POST['senha'] ?? null;
+            $cliente->save();
+        }
+        catch(Exception $e) {
+            $_SESSION['mensagem'] = [
+                'tipo'  => 'warning',
+                'texto' => $e->getMessage()
+              ];
+        
+              $this->cadastro();
+        }
+    }
 
         public function FormCadastro()
         {
