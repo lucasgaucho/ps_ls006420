@@ -7,7 +7,7 @@ use Petshop\View\Render;
 
 class MeusDadosController extends FrontController {
 
-    public function meuCadastro() {
+    public function meusDados() {
         $dados = [];
         $dados['topo'] = $this->carregaHtmlTopo();
         $dados['rodape'] = $this->carregaHtmlRodape();
