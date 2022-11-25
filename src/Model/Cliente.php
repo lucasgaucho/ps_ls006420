@@ -66,7 +66,7 @@ class Cliente extends DAO
     if (!in_array($this->tipo, ['F', 'J'])) {
       throw new Exception('O tipo de pessoa (F/J)precisa ser definido antes do documento');
     }
-    if ($this->tipo == 'F') {
+    if ($this->tipo == 'F' ) {
       $docValido = v::cpf()->validate($cpfCnpj);
     } else {
       $docValido = v::cnpj()->validate($cpfCnpj);
@@ -119,7 +119,7 @@ class Cliente extends DAO
     if (strlen($senha)<5) {
       throw new Exception('O comprimento da senha é inválido, digite ao menos 5 caracteres');
     }
-    $hashdaSenha = hash_hmac('mds', $senha, SALT_SENHA);
+    $hashdaSenha = hash_hmac('md5', $senha, SALT_SENHA);
     $senha = password_hash($hashdaSenha, PASSWORD_DEFAULT);
     $this->senha = $senha;
     return $this;
