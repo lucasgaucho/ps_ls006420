@@ -11,17 +11,15 @@ class SendMail
 {
   public static function enviar(string $paraNome, string $paraEmail, string $assunto, string $mensagem, string $replayToName = '', string $replayToEmail = '')
   {
-    //cria uma instânica e habilita a excessões (true)
     $mail = new PHPMailer(true);
 
     try {
-      //Server settings
       $mail->SMTPDebug = SMTP::DEBUG_OFF;
       $mail->isSMTP();
       $mail->Host       = MAIL_HOST;
       $mail->SMTPAuth   = true;
       $mail->Username   = MAIL_USER;
-      $mail->Password   = MAIL_PASSWORD;
+      $mail->Password   = MAIL_PASS;
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port       = MAIL_PORT;
 
@@ -34,13 +32,6 @@ class SendMail
         $mail->addReplyTo($replayToEmail, $replayToName);
       }
 
-      // $mail->addCC('cc@example.com');
-      // $mail->addBCC('bcc@example.com');
-      // Attachments
-      // $mail->addAttachment('/var/tmp/file.tar.gz');
-      // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');
-
-      //Content
       $mail->isHTML(true);
       $mail->Subject = $assunto;
       $mail->Body    = $mensagem;
