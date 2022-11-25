@@ -26,8 +26,9 @@ class App
     {
         self::$router->get('/', '\Petshop\Controller\HomeController@index');
         self::$router->get('/login', '\Petshop\Controller\LoginController@login');
+        self::$router->post('/login', '\Petshop\Controller\LoginController@postLogin');
         self::$router->get('/cadastro', '\Petshop\Controller\CadastroController@cadastro');
-        self::$router->post('/cadastro', '\Petshop\Controller\MeusDadosController@postcadastro');
+        self::$router->post('/cadastro', '\Petshop\Controller\CadastroController@postcadastro');
         self::$router->get('/meus-dados', '\Petshop\Controller\MeusDadosController@meusDados');
     }
 
