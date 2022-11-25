@@ -25,12 +25,13 @@ class LoginController extends FrontController
     Render::front('login', $dados);
   }
 
+
   public function logout()
   {
     $_SESSION = [];
     session_destroy();
     session_start();
-    redireciona('/login','success', 'Usuário desconectado com SUCESSO');
+    redireciona('/login','success', 'Usuário foi desconectado');
   }
 
   public function postLogin()
