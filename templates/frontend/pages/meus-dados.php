@@ -1,7 +1,7 @@
 <?php
 
-    $cliente = $_SESSION['cliente']; 
-    $cliente['prinome'] = substr($cliente['nome'], 0, strpos($cliente['nome'], ' ')); 
+    //$cliente = $_SESSION['cliente']; 
+    //$cliente['prinome'] = substr($cliente['nome'], 0, strpos($cliente['nome'], ' ')); 
 
     ?>
 <div class="container my-5">
