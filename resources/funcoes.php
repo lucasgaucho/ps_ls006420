@@ -21,7 +21,7 @@ function retornaHTMLAlertMenssagemSessao()
     return $bootstrapAlert;
 }
 
-function redireciona(string $destino, string $tipoMsg = '', string $mensagem = '')
+function redireciona(string $destino, string $tipoMsg='', string $mensagem='')
 {
     if ($tipoMsg && $mensagem) {
         $_SESSION['mensagem'] = [

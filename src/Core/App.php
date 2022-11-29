@@ -31,6 +31,8 @@ class App
         self::$router->get('/cadastro', '\Petshop\Controller\CadastroController@cadastro');
         self::$router->post('/cadastro', '\Petshop\Controller\CadastroController@postcadastro');
         self::$router->get('/meus-dados', '\Petshop\Controller\MeusDadosController@meusDados');
+        self::$router->get('/fale-conosco', '\Petshop\Controller\FaleConoscoController@faleConosco');
+        self::$router->post('/fale-conosco', '\Petshop\Controller\FaleConoscoController@postFaleConosco');
     }
 
     private static function RegistraRotasdoBackEnd()
@@ -43,7 +45,7 @@ class App
         self::$router->set404(function() {
             header('HTTP/1.1 404 Not found');
             $objErro = new ErrorController();
-            $objErro->erro404;
+            $objErro->error404;
         });
     }
 
