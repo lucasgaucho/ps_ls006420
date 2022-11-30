@@ -37,7 +37,7 @@ class App
 
     private static function RegistraRotasdoBackEnd()
     {
-
+        self::$router->get('/admin', '\Petshop\Controller\AdminDashboardController@index');
     }
 
     public static function registra404Generico()

@@ -52,8 +52,8 @@ class FaleConoscoController extends FrontController
                     <strong>Mensagem:</strong> <br> {$mensagem}<br>
 
             HTML;
-            $assunto = 'Contato via site';
-            SendMail::enviar(MAIL_NAME, MAIL_CONTACTMAIL, $assunto, $mensagemFull);
+            $assunto = 'Contato via site - ' . date('d/m/Y H:i:s');
+            SendMail::enviar(MAIL_NAME, MAIL_CONTACTMAIL, $assunto, $mensagemFull, $nome, $email);
         }
         catch(Exception $e) {
             $_SESSION['mensagem'] = [
