@@ -8,7 +8,7 @@ class AdminDashboardController {
     public function index()
     {
         $dados = [];
-        $dados['titulo'] = 'Inicio';
+        $dados['titulo'] = 'Dashboard';
 
         Render::back('dashboard', $dados);
     }
