@@ -1,0 +1,196 @@
+[01-Dec-2022 19:45:13 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:16 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:16 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:17 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:45:18 America/Sao_Paulo] Bloco não localizado em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/blocks/topo.php
+[01-Dec-2022 19:45:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: O bloco solicitado 'topo' não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:38
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\FrontController.php(18): Petshop\View\Render::block('topo', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\HomeController.php(16): Petshop\Core\FrontController->carregaHtmlTopo()
+#2 [internal function]: Petshop\Controller\HomeController->index()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(22): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 38
+[01-Dec-2022 19:59:13 America/Sao_Paulo] PHP Warning:  Undefined property: Petshop\Controller\ErrorController::$error404 in C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php on line 50

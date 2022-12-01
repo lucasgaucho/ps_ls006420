@@ -10,6 +10,6 @@ class AdminClienteController {
         $dados = [];
         $dados['titulo'] = 'Clientes';
 
-        Render::back('dashboard', $dados);
+        Render::back('clientes', $dados);
     }
 }
