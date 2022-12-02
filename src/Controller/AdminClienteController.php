@@ -69,7 +69,7 @@ class AdminClienteController
     } catch (Exception $e) {
       $_SESSION['mensagem'] = [
         'tipo' => 'warning',
-        'text' => $e->getMessage()
+        'texto' => $e->getMessage()
       ];
       $this->form($valor);
       exit;
@@ -84,7 +84,7 @@ class AdminClienteController
       'btn_class' => 'btn btn-warning px-5 mt-5',
       'btn_label' => 'Adicionar',
       'fields' => [
-        ['type' => 'text', 'name' => 'idcliente', 'class' => 'col-2', 'label' => 'Id. Cliente'],
+        ['type' => 'readonly', 'name' => 'idcliente', 'class' => 'col-2', 'label' => 'Id. Cliente'],
         [
           'type' => 'radio-inline', 'name' => 'tipo', 'class' => 'col-3', 'label' => 'Pessoa...',
           'options' => [

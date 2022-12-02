@@ -5,7 +5,7 @@ namespace Petshop\Core;
 use Bramus\Router\Router;
 use Petshop\Controller\ErrorController;
 
-class App 
+class App
 {
     private static $router;
 
@@ -18,9 +18,9 @@ class App
         self::RegistraRotasdoBackEnd();
         self::RegistraRotasdoFrontEnd();
         self::Registra404Generico();
-        
+
         self::$router->run();
-    }   
+    }
 
     private static function RegistraRotasdoFrontEnd()
     {
@@ -37,16 +37,17 @@ class App
 
     private static function RegistraRotasdoBackEnd()
     {
-        self::$router->mount('/admin', function() {
+        self::$router->mount('/admin', function () {
             self::$router->get('/', '\Petshop\Controller\AdminDashboardController@index');
-          /*   self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
-             self::$router->post('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@postForm'); */
-          self::$router->get('/clientes',  '\Petshop\Controller\AdminClienteController@listar');
-    });}
+            self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
+            self::$router->post('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@postForm');
+            self::$router->get('/clientes',  '\Petshop\Controller\AdminClienteController@listar');
+        });
+    }
 
     public static function registra404Generico()
     {
-        self::$router->set404(function() {
+        self::$router->set404(function () {
             header('HTTP/1.1 404 Not found');
             $objErro = new ErrorController();
             $objErro->error404;
