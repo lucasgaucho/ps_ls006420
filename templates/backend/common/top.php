@@ -76,7 +76,7 @@
                             <div class="sb-nav-link-icon"><i class="bi bi-lightbulb-fill"></i></div>
                             Dicas
                         </a>
-                        <a class="nav-link" href="/admin/clientes/dicas">
+                        <a class="nav-link" href="/admin/clientes/marcas">
                             <div class="sb-nav-link-icon"><i class="bi bi-bookmarks-fill"></i></div>
                             Marcas
                         </a>
