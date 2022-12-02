@@ -32,15 +32,16 @@ class App
         self::$router->post('/cadastro', '\Petshop\Controller\CadastroController@postcadastro');
         self::$router->get('/meus-dados', '\Petshop\Controller\MeusDadosController@meusDados');
         self::$router->get('/fale-conosco', '\Petshop\Controller\FaleConoscoController@faleConosco');
-        self::$router->post('/fale-conosco', '\Petshop\Controller\FaleConoscoController@postFaleConosco');
+        self::$router->post('/fale-conosco',    '\Petshop\Controller\FaleConoscoController@postFaleConosco');
     }
 
     private static function RegistraRotasdoBackEnd()
     {
         self::$router->mount('/admin', function() {
             self::$router->get('/', '\Petshop\Controller\AdminDashboardController@index');
-            // self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
-            self::$router->get('/clientes', '\Petshop\Controller\AdminClienteController@listar');
+          /*   self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
+             self::$router->post('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@postForm'); */
+          self::$router->get('/clientes',  '\Petshop\Controller\AdminClienteController@listar');
     });}
 
     public static function registra404Generico()
