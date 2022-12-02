@@ -25,4 +25,49 @@ class AdminClienteController {
 
         Render::back('clientes', $dados);
     }
+
+    public function form($valor)
+    {
+        if( is_numeric($valor) ) {
+            $objeto = new Cliente();
+            $resultado = $objeto->find( ['idcliente =' =>$valor]);
+            if (empty($resultado)) {
+                redireciona('/admin/clientes', 'danger', 'Link inválido, registro não localizado');
+            }
+            $_POST = $resultado[0];
+            $_POST['senha'] = '';
+        }
+        $dados = [];
+        $dados['titulo'] = 'Clientes - Manutenção ';
+        $dados['formulario'] = $this->renderizaFormulario(empty($_POST));
+
+        Render::back('clientes', $dados);
+    }
+
+    public function renderizaFormulario()
+    {
+
+        $dados = [
+            'btn_class' => 'btn btn-warning px-5 mt-5',
+            'btn_label' => 'Adicionar',
+            'fields' => [
+              ['type' => 'text', 'name' => 'idcliente', 'class' => 'col-2', 'label' => 'Id. Cliente'],
+              [
+                'type' => 'radio-inline', 'name' => 'tipo', 'class' => 'col-3', 'label' => 'Pessoa...',
+                'options' => [
+                  ['value' => 'F', 'label' => 'Física'],
+                  ['value' => 'J', 'label' => 'Jurídica'],
+                ],
+              ],
+              ['type' => 'text', 'name' => 'cpfcnpj', 'class' => 'col-3', 'label' => 'Documento', 'required'=>true],
+              ['type' => 'text', 'name' => 'nome', 'class' => 'col-4', 'label' => 'Nome completo', 'required'=>true],
+              ['type' => 'email', 'name' => 'email', 'class' => 'col-3', 'label' => 'E-mail', 'required'=>true],
+              ['type' => 'password', 'name' => 'senha', 'class' => 'col-3', 'label' => 'Senha'],
+              ['type' => 'readonly', 'name' => 'created_at', 'class' => 'col-3', 'label' => 'Criado em:'],
+              ['type' => 'readonly', 'name' => 'updated_at', 'class' => 'col-2', 'label' => 'Atualizado em:'],
+            ]
+          ];
+            
+          return Render::block('form', $dados);
+    }
 }

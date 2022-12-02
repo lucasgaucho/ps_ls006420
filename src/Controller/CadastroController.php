@@ -37,6 +37,7 @@ class CadastroController extends FrontController {
                 throw new Exception('Endereço de email já cadastrado, selecione recuperar senha se desejar');
             }
             $cliente->save();
+            exit;
         }
         catch(Exception $e) {
             $_SESSION['mensagem'] = [
