@@ -1,1 +1,2 @@
-Aqui a listagem de clientes
+
+<?= $tabela ?? '' ?>

@@ -37,7 +37,10 @@ class Render
       error_log('Bloco não localizado em: ' . $pathArquivo);
       throw new Exception("O bloco solicitado '{$bloco}' não foi localizada");
     }
-    
+    extract($dados);
+
+    ob_start();
+
     require_once $pathArquivo;
 
     return ob_get_clean();
@@ -46,7 +49,7 @@ class Render
 
   static public function back(string $pagina, array $dados = [])
   {
-    
+
     // monta o caminho do local onde a página está localizada
     $pathPagina = TBACKEND . 'pages/' . $pagina . '.php';
     if (!file_exists($pathPagina)) {
@@ -55,12 +58,14 @@ class Render
     }
     $dados['nomesite'] = BACKEND_TITLE;
 
-      if (empty($dados['titulo'])) {
+    if (empty($dados['titulo'])) {
       $dados['titulo'] = BACKEND_TITLE;
     } else {
       $dados['tituloInterno'] = $dados['titulo'];
       $dados['titulo'] = $dados['titulo'] . ' - ' . BACKEND_TITLE;
     }
+
+    extract($dados);
 
     require_once TBACKEND . 'common/top.php';
     require_once $pathPagina;
