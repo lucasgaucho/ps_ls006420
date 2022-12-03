@@ -37,11 +37,26 @@ class App
 
     private static function RegistraRotasdoBackEnd()
     {
+        self::$router->before('GET|POST', '/admin/.*', function(){
+            if( empty($_SESSION['usuario'])) {
+                redireciona('/admin', 'danger', 'Faça logon para continuar');
+            }
+            
+    });
+
         self::$router->mount('/admin', function () {
+            self::$router->get('/dashboard', '\Petshop\Controller\AdminDashboardController@index');
+            self::$router->post('/dashboard', '\Petshop\Controller\AdminDashboardController@index');
+
             self::$router->get('/', '\Petshop\Controller\AdminDashboardController@index');
+            
             self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
             self::$router->post('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@postForm');
             self::$router->get('/clientes',  '\Petshop\Controller\AdminClienteController@listar');
+            
+            self::$router->get('/usuarios/{valor}', '\Petshop\Controller\AdminUsuarioController@form');
+            self::$router->post('/usuarios/{valor}', '\Petshop\Controller\AdminUsuarioController@postForm');
+            self::$router->get('/usuarios',  '\Petshop\Controller\AdminUsuarioController@listar');
         });
     }
 
