@@ -87,11 +87,11 @@ class AdminUsuarioController
         [
           'type' => 'radio-inline', 'name' => 'tipo', 'class' => 'col-3', 'label' => 'Tipo...',
           'options' => [
-            ['value' => 'G', 'label' => 'Gestor'],
-            ['value' => 'V', 'label' => 'Vendedor'],
+            ['value' => 'Gestor', 'label' => 'Gestor'],
+            ['value' => 'Vendedor', 'label' => 'Vendedor'],
           ],
         ],
-        ['type' => 'text', 'name' => 'qtdeAcessos', 'class' => 'col-3', 'label' => 'Qtde. Acessos', 'required' => true],
+        ['type' => 'text', 'name' => 'qtdacessos', 'class' => 'col-3', 'label' => 'Qtde. Acessos', 'required' => true],
         ['type' => 'text', 'name' => 'nome', 'class' => 'col-4', 'label' => 'Nome completo', 'required' => true],
         ['type' => 'email', 'name' => 'email', 'class' => 'col-3', 'label' => 'E-mail', 'required' => true],
         ['type' => 'password', 'name' => 'senha', 'class' => 'col-3', 'label' => 'Senha'],

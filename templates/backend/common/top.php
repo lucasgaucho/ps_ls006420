@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +17,13 @@
     <link rel="stylesheet" href="/assets/css/style-admin.css">
     <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title><?= $titulo??'' ?></title>
+    <title><?= $titulo ?? '' ?></title>
 </head>
+
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="/admin"><?= $nomesite??'' ?></a>
+        <a class="navbar-brand ps-3" href="/admin"><?= $nomesite ?? '' ?></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
             <i class="fas fa-bars"></i>
@@ -59,14 +61,14 @@
                     <div class="nav">
                         <!-- EXEMPLO DE TÍTULO DO GRUPO DE LINKS NO MENU -->
                         <div class="sb-sidenav-menu-heading">Menu</div>
-                        
+
                         <a class="nav-link" href="/admin/dashboard">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
                         <a class="nav-link" href="/admin/usuarios">
                             <div class="sb-nav-link-icon"><i class="bi bi-person-fill-lock"></i></div>
-                           Usuários
+                            Usuários
                         </a>
                         <a class="nav-link" href="/admin/clientes">
                             <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
@@ -89,8 +91,8 @@
                             Produtos
                         </a>
                         <div class="sb-sidenav-footer">
-                            <div class="small">Logado como:</div>    
-                        <?=$usuario ?>
+                            <div class="small">Logado como:</div>
+                            <?= $usuario ?>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
@@ -103,14 +105,14 @@
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logado como:</div>
-                    <?= $usuario['nome']??'' ?>
+                    <?= $usuario['nome'] ?? '' ?>
                 </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4"><?= $tituloInterno??''?> </h1>
+                    <h1 class="mt-4"><?= $tituloInterno ?? '' ?> </h1>
                     <!-- <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol> -->

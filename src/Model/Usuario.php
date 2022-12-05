@@ -10,23 +10,23 @@ use Respect\Validation\Validator as v;
 #[Entidade(name: 'usuarios')]
 class Usuario extends DAO
 {
-  #[Campo(label: 'Cód. Usuario', pk: true, nn: true, auto: true)]
+  #[Campo(label: 'Cód. Usuário', pk: true, nn: true, auto: true)]
   protected $idUsuario;
+
+  #[Campo(label: 'Nome Completo', nn: true, order:true)]
+  protected $nome;
+
+  #[Campo(label: 'E-mail', nn: true)]
+  protected $email;
+
+  #[Campo(label: 'Senha', nn: true)]
+  protected $senha;
 
   #[Campo(label: 'Tipo', nn: true)]
   protected $tipo;
 
-  #[Campo(label: 'Qtde Acessos', nn: true)]
-  protected $qtdacessos;
-
-  #[Campo(label: 'Nome do Usuario', nn: true, order:true)]
-  protected $nome;
-
-  #[Campo(label: 'E-mail do Usuario', nn: true)]
-  protected $email;
-
-  #[Campo(label: 'Senha do Usuario', nn: true)]
-  protected $senha;
+  #[Campo(label: 'Qtd. acessos', nn: true)]
+  protected $qtdAcessos;
 
   #[Campo(label: 'Dt. Criação', nn: true, auto: true)]
   protected $created_at;
@@ -38,33 +38,6 @@ class Usuario extends DAO
   public function getIdUsuario()
   {
     return $this->idUsuario;
-  }
-
-  public function getTipo()
-  {
-    return $this->tipo;
-  }
-
-  public function setTipo(string $tipo): self
-  {
-    $tipo = strtoupper(trim($tipo));
-    if (!in_array($tipo, ['Gestor', 'Vendedor'])) {
-      throw new Exception('O tipo de pessoa não está definido corretamente (Gestou ou Vendedor)');
-    }
-
-    $this->tipo = $tipo;
-    return $this;
-  }
-
-  public function getqtdacessos()
-  {
-    return $this->qtdeacessos;
-  }
-
-  public function setqtdacessos(int $qtdacessos): self
-  {
-    $this->qtdacessos = $qtdacessos;
-    return $this;
   }
 
   public function getNome()
@@ -92,6 +65,7 @@ class Usuario extends DAO
     if (!$emailValido) {
       throw new Exception('O e-mail informado é inválido');
     }
+
     $this->email = $email;
     return $this;
   }
@@ -103,15 +77,44 @@ class Usuario extends DAO
 
   public function setSenha(string $senha): self
   {
-    if ($this->senha && !$senha) {
-        return $this;
+    if($this->senha && !$senha) {
+      return $this;
     }
-    if (strlen($senha)<5) {
-      throw new Exception('O comprimento da senha é inválido, digite ao menos 5 caracteres');
+    if (strlen($senha) < 5) {
+      throw new Exception('O comprimento da senha é inválido, digite ao menos cinco caracteres');
     }
+
     $hashdaSenha = hash_hmac('md5', $senha, SALT_SENHA);
     $senha = password_hash($hashdaSenha, PASSWORD_DEFAULT);
     $this->senha = $senha;
+    return $this;
+  }
+
+  public function getTipo()
+  {
+    return $this->tipo;
+  }
+
+  public function setTipo(string $tipo): self
+  {
+    $tipo = trim($tipo);
+    if (!in_array($tipo, ['Gestor', 'Vendedor'])) {
+      throw new Exception('O tipo de pessoa não está definido corretamente');
+    }
+
+    $this->tipo = $tipo;
+    return $this;
+  }
+
+  public function getQtdAcessos()
+  {
+    return $this->qtdAcessos;
+  }
+
+  public function setQtdAcessos(int $qtdAcessos): self
+  {
+    $this->qtdAcessos = $qtdAcessos;
+
     return $this;
   }
 
