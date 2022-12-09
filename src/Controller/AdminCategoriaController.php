@@ -14,6 +14,7 @@ class AdminCategoriaController
     $dadosListagem = [];
     $dadosListagem['objeto']  = new Categoria();
     $dadosListagem['imagens']  = true;
+    $dadosListagem['remover'] = true;
     $dadosListagem['colunas'] = [
       ['campo' => 'idcategoria',  'class' => 'text-center'],
       ['campo' => 'nome'],
