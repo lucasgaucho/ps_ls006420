@@ -86,7 +86,7 @@ class Produto extends DAO
   {
     $objCategoria = new Categoria;
     if (!$objCategoria->loadById($idCategoria)) {
-      throw new Exception('A csategoria informada é inválida');
+      throw new Exception('A categoria informada é inválida');
     }
 
     $this->idCategoria = $idCategoria;

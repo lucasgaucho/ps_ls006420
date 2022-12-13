@@ -84,7 +84,7 @@ class Empresa extends DAO
     public function setNomefantasia(string $nomefantasia): self
     {
         $nomefantasia = trim($nomefantasia);
-        $tamanhoValido = v::stringType()->lenght(1, 255)->validate($nomefantasia);
+        $tamanhoValido = v::stringType()->length(1, 255)->validate($nomefantasia);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do nome fantasia é inválido');
         }
@@ -107,7 +107,7 @@ class Empresa extends DAO
     public function setRazaosocial(string $razaosocial): self
     {
         $razãoSocial = trim($razaosocial);
-        $tamanhoValido = v::stringType()->lenght(1, 255)->validate($razaosocial);
+        $tamanhoValido = v::stringType()->length(1, 255)->validate($razaosocial);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do campo razão social é inválido');
         }
@@ -174,7 +174,7 @@ class Empresa extends DAO
     public function setCidade(string $cidade): self
     {
         $cidade = trim($cidade);
-        $tamanhoValido = v::stringType()->lenght(2, 35)->validate($cidade);
+        $tamanhoValido = v::stringType()->length(2, 35)->validate($cidade);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do campo cidade é inválido');
         }
@@ -197,7 +197,7 @@ class Empresa extends DAO
     public function setEstado($estado): self
     {
         $estado = trim($estado);
-        $tamanhoValido = v::stringType()->lenght(2, 20)->validate($estado);
+        $tamanhoValido = v::stringType()->length(2, 20)->validate($estado);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do campo estado social é inválido');
         }
@@ -321,10 +321,6 @@ class Empresa extends DAO
     public function setSite($site): self
     {
         $site = trim($site);
-        $tamanhoValido = v::url()->validate($site);
-        if (!$tamanhoValido) {
-            throw new Exception('O valor do campo site é inválido');
-        }
         $this->site = $site;
 
         return $this;
@@ -344,7 +340,7 @@ class Empresa extends DAO
     public function setEmail($email): self
     {
         $email = trim($email);
-        $tamanhoValido = v::phone()->validate($email);
+        $tamanhoValido = v::email()->validate($email);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do campo email é inválido');
         }
@@ -383,7 +379,7 @@ class Empresa extends DAO
     public function setCnpj(string $cnpj): self
     {
         $cnpj = trim($cnpj);
-        $tamanhoValido = v::phone()->validate($cnpj);
+        $tamanhoValido = v::cnpj()->validate($cnpj);
         if (!$tamanhoValido) {
             throw new Exception('O tamanho do campo cnpj é inválido');
         }

@@ -69,7 +69,7 @@ if (empty($cliente)) {
         <div class="col-auto d-flex align-items-center">
           <a href="/nossas-lojas" title="Conheça as nossas lojas">
             <i class="bi bi-shop pe-1"></i>
-            <span>Nossas lojas</span>
+            <span>Nossas Lojas</span>
           </a>
         </div>
         <div class="col-auto d-flex align-items-center">
