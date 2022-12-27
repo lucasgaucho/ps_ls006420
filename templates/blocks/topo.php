@@ -77,6 +77,14 @@ if (empty($cliente)) {
             <i class="bi bi-megaphone pe-1"></i>
             <span>Fale conosco</span>
           </a>
+
+          <div class="col-auto d-flex align-items-center">
+          <a href="/promocoes" title="Promocoes">
+          <i class="bi bi-currency-dollar"></i> 
+            <span>Promoções</span>
+          </a>
+          </div>
+
         </div>
       </div>
       <div class="topo-site-inferior-fone col-4 d-flex align-items-center justify-content-end">
@@ -93,8 +101,6 @@ if (empty($cliente)) {
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <p>Lista da categorias ex1</p>
-    <p>Lista da categorias ex2</p>
-    <p>Lista da categorias ex3</p>
+    <p>Lista da categorias</p>
   </div>
 </div>

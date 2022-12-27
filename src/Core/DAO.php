@@ -278,11 +278,10 @@ abstract class DAO
     $files = DB::select($slq, $parametros);
 
     foreach($files as &$file) {
-      $nomeArquivo = $file['idarquivo'] . '.' . pathinfo($file['nome'], PATHINFO_EXTENSION);
+      $nomeArquivo  = $file['idarquivo'] . '.' . pathinfo($file['nome'], PATHINFO_EXTENSION);
       $file['path'] = PATH_PROJETO . 'public/assets/img/uploads/' . $nomeArquivo;
-      $file['url'] = URL . '/assets/img/uploads/' . $nomeArquivo;
-    }
-
-    return $files;
+      $file['url']  = URL . '/assets/img/uploads/' . $nomeArquivo;
   }
+  return $files;
+}
 }

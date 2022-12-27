@@ -702,3 +702,1077 @@ Stack trace:
 #7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
 #8 {main}
   thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\DB.php on line 61
+[17-Dec-2022 16:04:07 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[17-Dec-2022 16:04:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(131): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[17-Dec-2022 16:34:48 America/Sao_Paulo] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/1.png): Failed to open stream: No such file or directory in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[17-Dec-2022 16:34:48 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpD82A.tmp&quot; to &quot;C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/1.png&quot; in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[17-Dec-2022 16:35:39 America/Sao_Paulo] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/2.png): Failed to open stream: No such file or directory in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[17-Dec-2022 16:35:39 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpA1B5.tmp&quot; to &quot;C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/2.png&quot; in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[26-Dec-2022 23:00:04 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[26-Dec-2022 23:00:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(131): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:57:53 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:57:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:57:56 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:57:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:07 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:11 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:12 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:13 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:13 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:14 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:14 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:15 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 00:58:15 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/fornecedores.php
+[27-Dec-2022 00:58:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''fornecedores não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\FornecedorController.php(27): Petshop\View\Render::front('fornecedores', Array)
+#1 [internal function]: Petshop\Controller\FornecedorController->listaFornecedor()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:56:21 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:56:21 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:57:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:57:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:57:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:57:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:57:35 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:57:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:32 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:32 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:33 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:33 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:33 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:35 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 08:59:35 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 08:59:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:02:44 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:02:44 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:02:44 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:02:44 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:02:45 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:02:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:02:45 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:02:45 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(137): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:33:23 America/Sao_Paulo] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/3.jpg): Failed to open stream: No such file or directory in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 09:33:23 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpF73E.tmp&quot; to &quot;C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/3.jpg&quot; in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 09:42:21 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:42:21 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:42:41 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:42:41 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:15 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 09:44:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:24 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:25 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:25 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:26 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:27 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:44:27 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:44:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:45:09 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:45:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:45:10 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:45:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:45:11 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:45:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:45:12 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:45:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:45:12 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:45:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listaPromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:26 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:27 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:27 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:46:28 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:46:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:47:11 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:47:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:47:11 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:47:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:47:26 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:47:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:49:30 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:49:30 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:49:30 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:49:30 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:49:36 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:49:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:50:33 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:50:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:50:33 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:50:33 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:50:43 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:50:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:54:04 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:54:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:55:00 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:55:00 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:55:10 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:55:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 09:55:11 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/promocoes.php
+[27-Dec-2022 09:55:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''promocoes não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\PromocaoController.php(27): Petshop\View\Render::front('promocoes', Array)
+#1 [internal function]: Petshop\Controller\PromocaoController->listapromocao()
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:34 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined variable $form in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:19:35 America/Sao_Paulo] PHP Warning:  Undefined array key "" in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 29
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:00 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:54 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:56 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:57 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:26:58 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 34
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:41 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:27:42 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 33
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 30
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $date in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:30:49 America/Sao_Paulo] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 31
+[27-Dec-2022 10:39:25 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 10:39:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 10:39:35 America/Sao_Paulo] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 41
+[27-Dec-2022 10:41:29 America/Sao_Paulo] PHP Warning:  Undefined variable $imgLink in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 19
+[27-Dec-2022 10:41:29 America/Sao_Paulo] PHP Warning:  Undefined variable $imgLink in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 19
+[27-Dec-2022 10:41:29 America/Sao_Paulo] PHP Warning:  Undefined variable $imgLink in C:\xampp\htdocs\proj_integrador\Projeto01\templates\frontend\pages\promocao.php on line 19
+[27-Dec-2022 10:41:29 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 10:41:29 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 10:50:50 America/Sao_Paulo] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/4.jpg): Failed to open stream: No such file or directory in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 10:50:50 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpDF97.tmp&quot; to &quot;C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/4.jpg&quot; in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 10:53:11 America/Sao_Paulo] PHP Warning:  move_uploaded_file(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/5.jpg): Failed to open stream: No such file or directory in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 10:53:11 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php527.tmp&quot; to &quot;C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/5.jpg&quot; in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 124
+[27-Dec-2022 10:53:11 America/Sao_Paulo] PHP Warning:  rename(C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/5.jpg,C:\xampp\htdocs\proj_integrador\Projeto01\config/../public/assets/img/uploads/5.jpg_original): O sistema não pode encontrar o caminho especificado (code: 3) in C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php on line 128
+[27-Dec-2022 10:53:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Gumlet\ImageResizeException: File does not exist in C:\xampp\htdocs\proj_integrador\Projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php:114
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\AdminImagemController.php(129): Gumlet\ImageResize->__construct('C:\\xampp\\htdocs...')
+#1 [internal function]: Petshop\Controller\AdminImagemController->postForm('Promocao', '3', 'add')
+#2 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php on line 114
+[27-Dec-2022 10:56:03 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 10:56:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 10:56:07 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 10:56:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15
+[27-Dec-2022 11:01:40 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\proj_integrador\Projeto01\config/../templates/frontend/pages/404.php
+[27-Dec-2022 11:01:40 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: A página solicitada ''404 não foi localizada in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php:15
+Stack trace:
+#0 C:\xampp\htdocs\proj_integrador\Projeto01\src\Controller\ErrorController.php(16): Petshop\View\Render::front('404', Array)
+#1 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(146): Petshop\Controller\ErrorController->erro404()
+#2 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#3 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#5 C:\xampp\htdocs\proj_integrador\Projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#6 C:\xampp\htdocs\proj_integrador\Projeto01\src\Core\App.php(39): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\proj_integrador\Projeto01\public\index.php(6): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\proj_integrador\Projeto01\src\View\Render.php on line 15

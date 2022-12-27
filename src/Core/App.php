@@ -54,8 +54,12 @@ class App
     self::$router->get('/cadastro', '\Petshop\Controller\CadastroController@cadastro');
     self::$router->get('/meus-dados', '\Petshop\Controller\MeusDadosController@meusDados');
     self::$router->get('/fale-conosco', '\Petshop\Controller\FaleConoscoController@faleConosco');
-    self::$router->get('/nossas-lojas', '\Petshop\Controller\NossasLojasController@listar');
+    self::$router->get('/nossas-lojas', '\Petshop\Controller\LojasController@listalojas');
     self::$router->get('/favoritos', '\Petshop\Controller\FavoritosController@listar');
+    self::$router->get('/categoria{id}', '\Petshop\Controller\CategoriaController@listaCategoria');
+        self::$router->get('/fornecedores', '\Petshop\Controller\FornecedorController@listaFornecedor');
+
+        self::$router->get('/promocoes', '\Petshop\Controller\PromocaoController@listapromocao');
 
     //ROTAS dos SETTERS
     self::$router->post('/login', '\Petshop\Controller\LoginController@postlogin');
@@ -107,9 +111,20 @@ class App
       self::$router->get('/produtos/{valor}', '\Petshop\Controller\AdminProdutoController@form');
       self::$router->post('/produtos/{valor}', '\Petshop\Controller\AdminProdutoController@postForm');
       
+      
+      
+      self::$router->get('/promocoes', '\Petshop\Controller\AdminPromocoesController@listar');
+      self::$router->get('/promocoes/{valor}', '\Petshop\Controller\AdminPromocoesController@form');
+      self::$router->post('/promocoes/{valor}', '\Petshop\Controller\AdminPromocoesController@postForm');
+      
+      
       self::$router->get('/empresas', '\Petshop\Controller\AdminEmpresaController@listar');
       self::$router->get('/empresas/{valor}', '\Petshop\Controller\AdminEmpresaController@form');
       self::$router->post('/empresas/{valor}', '\Petshop\Controller\AdminEmpresaController@postForm');
+
+      // self::$router->get('/fornecedores', '\Petshop\Controller\AdminFornecedorController@listar');
+      //       self::$router->get('/fornecedores/{valor}', '\Petshop\Controller\AdminFornecedorController@form');
+      //       self::$router->post('/fornecedores/{valor}', '\Petshop\Controller\AdminFornecedorController@postForm');
 
       self::$router->get('/imagens/(\w+)/(\d+)', '\Petshop\Controller\AdminImagemController@listar');
       self::$router->get('/imagens/(\w+)/(\d+)/(\w+)', '\Petshop\Controller\AdminImagemController@form');
